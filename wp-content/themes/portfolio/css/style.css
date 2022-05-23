@@ -1,0 +1,9 @@
+body {
+    color: #0048ff;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    font-size: 0;
+}
