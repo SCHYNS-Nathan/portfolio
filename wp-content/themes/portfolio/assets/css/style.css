@@ -1,5 +1,11 @@
-/* ---------- RESET CSS ---------- */
+/* ---------- LOAD FONT ---------- */
+@font-face {
+    font-family: Merriweather;
+    src: url("../fonts/Merriweather-Regular.ttf");
+}
 
+
+/* ---------- RESET CSS ---------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,13 +51,14 @@ table {
 
 
 /* ---------- CSS ---------- */
-
 body {
     background-color: #EDE2BF;
     color: #F6F5EC;
 }
 h1, h2 {
     text-align: center;
+    font-family: Merriweather, serif;
+    font-size: 50px;
 }
 .hidden {
     position: absolute;

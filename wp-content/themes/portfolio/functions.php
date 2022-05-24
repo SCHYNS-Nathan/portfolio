@@ -1,5 +1,8 @@
 <?php
+require_once(__DIR__ . '/acf.php');
+require_once(__DIR__ . '/CustomSearchQuery.php');
 
+// Add action and filter
 add_action('init', 'portfolio_boot_theme', 1);
 function portfolio_boot_theme()
 {
@@ -20,6 +23,21 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 		'proper_filename' => $data['proper_filename']
 	];
 }, 10, 4 );
+
+function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+function fix_svg() {
+	echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+        </style>';
+}
+add_action( 'admin_head', 'fix_svg' );
 
 
 // Create CPT
@@ -54,15 +72,39 @@ register_post_type('socials', [
 
 
 // Get CPT
-function get_socials($count, $search = null)
-{
-	$socials = new DW_CustomSearchQuery([
-		'post_type' => 'social',
+function portfolio_get_projects($count, $search = null): DW_CustomSearchQuery {
+	return new DW_CustomSearchQuery([
+		'post_type' => 'projets',
 		'orderby' => 'date',
 		'order' => 'ASC',
 		'posts_per_page' => $count,
 		's' => strlen($search) ? $search : null,
 	]);
+}
+function portfolio_get_socials($count, $search = null): DW_CustomSearchQuery {
+	return new DW_CustomSearchQuery([
+		'post_type' => 'socials',
+		'orderby' => 'date',
+		'order' => 'ASC',
+		'posts_per_page' => $count,
+		's' => strlen($search) ? $search : null,
+	]);
+}
 
-	return $socials;
+
+// Restreindre la requête de recherche "par défaut"
+function dw_restrict_search_query($query) {
+	if ($query->is_search && ! is_admin() && ! is_a($query, DW_CustomSearchQuery::class)) {
+		$query->set('post_type', ['post']);
+	}
+	return $query;
+}
+add_filter('pre_get_posts','dw_restrict_search_query');
+
+
+// Fonction permettant d'inclure des "partials" dans la vue et d'y injecter des variables "locales" (uniquement disponibles dans le scope de l'inclusion).
+function dw_include(string $partial, array $variables = [])
+{
+	extract($variables);
+	include(__DIR__ . '/assets/partials/' . $partial . '.php');
 }
