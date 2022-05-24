@@ -23,6 +23,9 @@
                 <path d="M0.500002 10.9254C168 -11.4213 347.5 1.99467 480.5 44.5145C613.5 87.0343 900 249.777 1105 249.777C1310 249.777 1598 117.191 1672 107.757C1746 98.3233 1842.5 118.681 1920.5 152.945C1920.5 206.574 1920.5 346.61 1920.5 400.24H0.5L0.500002 10.9254Z" fill="#282F39"/>
             </svg>
         </div>
+        <canvas id="canvas" width="320" height="5750">
+
+        </canvas>
     </div>
     <section class="index__presentation">
         <h2 class="presentation__title">
@@ -35,11 +38,11 @@
         <h2 class="projects__title">
             Jetez un œil à mes projets
         </h2>
-	    <?php if(($modules = portfolio_get_projects(5))->have_posts()): while($modules->have_posts()): $modules->the_post();
+	    <?php if(($modules = portfolio_get_projects(3))->have_posts()): while($modules->have_posts()): $modules->the_post();
 		    include (__DIR__ . '/assets/partials/project.php');
 	    endwhile; else:  ?>
 	    <?php endif; ?>
-        <a class="projects__link" href="#">
+        <a class="projects__link" href="#" title="Direction la page des projets !">
             Découvrez tous mes projets
         </a>
     </section>
@@ -86,7 +89,7 @@
         <p class="scroll__text">
             Retourner à la surface ?
         </p>
-        <a class="scroll__link" href="#top">
+        <a class="scroll__link" href="#top" title="Pour retourner au sommet de la page !">
             <svg width="88" height="75" viewBox="0 0 88 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M44 0L87.3013 75H0.69873L44 0Z" fill="#101214"/>
             </svg>

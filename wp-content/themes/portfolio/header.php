@@ -16,7 +16,7 @@
     <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri(); ?>/assets/favicon/favicon.ico">
     <title><?= wp_title('|', false, 'right') . get_bloginfo('name') ?></title>
 
-    <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/assets/css/style.css">
     <!-- <script type="text/javascript" src="<?= get_template_directory_uri(); ?>" defer></script>-->
 </head>
 <body>

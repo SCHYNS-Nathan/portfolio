@@ -8,5 +8,5 @@
 	<p class="project__description">
 		<?= get_field('description'); ?>
 	</p>
-	<a class="project__link" href="<?= get_field('link'); ?>"></a>
+	<a class="project__link" href="<?= get_field('link'); ?>" title="Direction la page de présentation du projet !"></a>
 </article>

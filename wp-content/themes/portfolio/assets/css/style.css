@@ -1,82 +1,61 @@
-/* ---------- LOAD FONT ---------- */
+@import "reset.css";
+
 @font-face {
     font-family: Merriweather;
     src: url("../fonts/Merriweather-Regular.ttf");
+    font-display: auto;
+}
+@font-face {
+    font-family: MerriweatherBlack;
+    src: url("../fonts/Merriweather-Black.ttf");
+    font-display: auto;
+}
+@font-face {
+    font-family: InterBlack;
+    src: url("../fonts/Inter-Black.ttf");
+    font-display: auto;
 }
 
-
-/* ---------- RESET CSS ---------- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+html {
+    scroll-behavior: smooth;
 }
 body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* ---------- CSS ---------- */
-body {
+    font-family: Merriweather, serif;
     background-color: #EDE2BF;
     color: #F6F5EC;
-}
-h1, h2 {
-    text-align: center;
-    font-family: Merriweather, serif;
-    font-size: 50px;
 }
 .hidden {
     position: absolute;
     left: -10000px;
     font-size: 0;
 }
+::selection {
+    background-color: #F6F5EC;
+    color: #282F39;
+}
+.form__input::selection, button::selection {
+    color: #F6F5EC;
+    background-color: #282F39;
+}
+
+
+h1, h2 {
+    font-family: MerriweatherBlack, serif;
+    text-align: center;
+    font-size: 50px;
+}
+
 
 
 .index__presentation, .index__contact, .footer, .index__scroll {
     background-color: #282F39;
+    padding: 0 15vw;
 }
-.index__projects {
-    background-color: #CF2E46;
-}
+
 
 .index__landscape .landscape__logo {
      width: 20vw;
-     margin: 20vw auto 10vw;
+     margin: 10vh auto 7.5vh;
 }
 .index__landscape div svg{
     width: 100%;
@@ -91,9 +70,135 @@ h1, h2 {
 .landscape__forground {
     margin-bottom: -10px;
 }
+#canvas {
+    position: absolute;
+    background-color: #CF2E46;
+    left: 50%;
+    transform: translate(-50%, -15vw);
+}
 
 
 
 .index__presentation {
     height: 5500px;
+}
+.presentation__title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.index__projects {
+    background-color: #CF2E46;
+    padding: 0 15vw 120px;
+
+}
+.projects__title {
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+.projects__project {
+    display: grid;
+    grid-template-areas:
+        "img title"
+        "img description"
+        "img link";
+    margin: 0 auto 120px;
+}
+.projects__project:nth-child(2n+1) {
+    grid-template-areas:
+        "title img"
+        "description img"
+        "link img";
+}
+.project__title {
+    grid-area: title;
+    font-size: 25px;
+    font-family: MerriweatherBlack, serif;
+    margin: 0 0 0 40px;
+}
+.project__fig {
+    grid-area: img;
+}
+.project__description {
+    grid-area: description;
+    margin: 0 0 0 40px;
+}
+.project__link {
+    grid-area: link;
+    margin: 0 0 0 40px;
+}
+.projects__project:nth-child(2n+1) .project__title {
+    margin: 0 40px 0 0;
+}
+.projects__project:nth-child(2n+1) .project__description {
+    margin: 0 40px 0 0;
+}
+.projects__project:nth-child(2n+1) .project__link {
+    margin: 0 40px 0 0;
+}
+.projects__link {
+    display: table;
+    font-family: InterBlack, sans-serif;
+    font-size: 20px;
+    background-color: #282F39;
+    color: #F6F5EC;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 20px 120px;
+}
+
+.index__contact {
+}
+.contact__title {
+    padding: 80px 0;
+}
+.contact__title em {
+    font-family: Merriweather, serif;
+    font-size: 25px;
+}
+.form__group {
+    display: block;
+    margin-bottom: 40px;
+}
+.form__label {
+    font-family: MerriweatherBlack, serif;
+    font-size: 25px;
+}
+.form__input {
+    width: 100%;
+    font-family: Merriweather, serif;
+    font-size: 15px;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: rgba(0,0,0,0);
+    color: #F6F5EC;
+    border: 3px solid #F6F5EC;
+    box-sizing: border-box;
+}
+#f_subject {
+    background-color: #F6F5EC;
+    color: #282F39;
+    padding: 8px 0 8px 8px;
+}
+#f_message {
+    resize: vertical;
+    min-height: 41px;
+    max-height: 300px;
+}
+.form__button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: InterBlack, sans-serif;
+    font-size: 20px;
+    border: none;
+    background-color: #F6F5EC;
+    color: #282F39;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 20px 120px;
 }
