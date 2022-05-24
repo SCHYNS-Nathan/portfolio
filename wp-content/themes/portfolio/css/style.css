@@ -60,10 +60,33 @@ h1, h2 {
 }
 
 
-.index__presentation, .index__contact, .footer {
+.index__presentation, .index__contact, .footer, .index__scroll {
     background-color: #282F39;
 }
-
 .index__projects {
     background-color: #CF2E46;
+}
+
+.index__landscape .landscape__logo {
+     width: 20vw;
+     margin: 20vw auto 10vw;
+}
+.index__landscape div svg{
+    width: 100%;
+}
+.index__landscape div:nth-child(n+2) {
+    width: 100%;
+}
+.landscape__background, .landscape__middleground {
+    position: absolute;
+    z-index: -1;
+}
+.landscape__forground {
+    margin-bottom: -10px;
+}
+
+
+
+.index__presentation {
+    height: 5500px;
 }
