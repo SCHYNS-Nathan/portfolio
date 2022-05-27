@@ -31,18 +31,111 @@
         <h2 class="presentation__title">
             Bien le bonjour !
         </h2>
-
-
+        <div class="presentation__container">
+            <p class="presentation__">
+                Je suis Nathan, un designer web et illustrateur se terrant à vingt mille lieues sous vos pieds.
+                <br>
+                Si vous voulez atteindre mon antre, il va falloir plonger !
+            </p>
+            <a class="presentation__skip" href="#projectTitle">
+                Passer la présentation
+            </a>
+        </div>
+        <p class="presentation__text">
+            Alors vous avez décidé de vous jeter corps et âme dans la descente ?
+            <br>
+            Bien, je vais vous accompagner dans ce cas !
+        </p>
+        <div class="presentation__container">
+            <p class="presentation__">
+                Parlez moi un peu de vous, comment vous vous appelez ?
+            </p>
+            <form class="presentation__form">
+                <div class="form__group">
+                    <label class="form__label" for="p_name">Votre nom</label>
+                    <input class="form__input" id="p_name" name="p_name" type="text" placeholder="Le mien commence et termine par un S">
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="p_firstname">Votre prénom</label>
+                    <input class="form__input" id="p_firstname" name="p_firstname" type="text" placeholder="Vous connaissez déjà le mien !">
+                </div>
+            </form>
+        </div>
+        <div class="presentation__container">
+            <p class="presentation__">
+                Je vois je vois.
+                <br>
+                Et qu’est-ce qui vous amène ici exactement ?
+            </p>
+            <form class="presentation__form">
+                <div class="form__group">
+                    <label class="form__label" for="p_subject">C'est à quel sujet ?</label>
+                    <select class="form__input" id="p_subject" name="p_subject">
+                        <option value="web_site">Un site web</option>
+                        <option value="illu">Une illustration</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <p class="presentation__text">
+            Oh, si c’est à propos de ça, je peux vous informer de mon parcours !
+            <br>
+            Je suis un jeune homme dilômé de l’ESA St-Luc de Liège et habitué à développer sa créativité au travers de support très variés.
+            <br>
+            Que ce soit des livres, des sites web ou des expériences ludiques, je suis toujours partant pour créer de nouvelles choses.
+        </p>
+        <p class="presentation__text">
+            J’ai également réalisé des études à la Haute École de la Province de Liège. C’est de là que me viennent mes compétences techniques et mon amour pour le web !
+            <br>
+            (Il suffit de regarder le site sur lequel vous naviguer...)
+        </p>
+        <p class="presentation__text">
+            Bref, j’espère que vous ne regrettez pas la descente.
+            <br>
+            Il faut dire que c’est plutôt long...
+            <br>
+            Je savais que j’aurais du raccourcir cette partie...
+        </p>
+        <p class="presentation__text">
+            Je peux vous parler un peu de mes hobbies si vous voulez.
+            <br>
+            Remarque... ce n’est pas comme si il y avait beaucoup d’autres choses à faire...
+        </p>
+        <p class="presentation__text">
+            Lorsque je n’ai pas un crayon ou une souris à la main, c’est généralement une manette que je tiens.
+            <br>
+            En effet, je suis un compétiteur esport depuis plusieurs années et grâce à cela, j’ai voyagé aux quatres coin de l’europe.
+        </p>
+        <p class="presentation__text">
+            Je pratiquais aussi un art martial mais le club a du fermer il y a quelques années.
+        </p>
+        <p class="presentation__text">
+            Enfin, je souhaiterais ouvrir un studio de jeu indé avec plusieurs amis afin de créer des jeux-vidéos sur notre temps libre.
+        </p>
+        <p class="presentation__text">
+            Eh bien, vous en savez des choses sur moi maintenant...
+            <br>
+            J’espère que cela sera réciproque dans le futur.
+        </p>
+        <p class="presentation__text">
+            Il semblerait que l’on arrive enfin au bout du tunnel !
+        </p>
+        <p class="presentation__text">
+            Je vais donc vous laisser afin que vous puissiez...
+        </p>
     </section>
     <section class="index__projects">
-        <h2 class="projects__title">
+        <h2 class="projects__title" id="projectTitle">
             Jetez un œil à mes projets
         </h2>
 	    <?php if(($modules = portfolio_get_projects(3))->have_posts()): while($modules->have_posts()): $modules->the_post();
 		    include (__DIR__ . '/assets/partials/project.php');
-	    endwhile; else:  ?>
+	    endwhile; else: ?>
+            <p class="projects__error">
+                On dirait que mes projets ne sont pas disponible pour le moment, revenez plus tard !
+            </p>
 	    <?php endif; ?>
-        <a class="projects__link" href="#" title="Direction la page des projets !">
+        <a class="projects__link" href="<?= get_post_type_archive_link('projets'); ?>" title="Direction la page des projets !">
             Découvrez tous mes projets
         </a>
     </section>

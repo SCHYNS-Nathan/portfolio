@@ -47,7 +47,15 @@
     </article>
     <section class="singleProject__more">
         <h2 class="more__title">À voir aussi</h2>
-
+        <ul class="more__list">
+	        <?php if(($modules = portfolio_get_projects(5))->have_posts()): while($modules->have_posts()): $modules->the_post();
+		        include (__DIR__ . '/assets/partials/more-project.php');
+	        endwhile; else: ?>
+                <p class="projects__error">
+                    On dirait que mes projets ne sont pas disponible pour le moment, revenez plus tard !
+                </p>
+	        <?php endif; ?>
+        </ul>
     </section>
 </main>
 <?= get_footer(); ?>
