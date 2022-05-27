@@ -91,7 +91,6 @@ function portfolio_get_socials($count, $search = null): DW_CustomSearchQuery {
 	]);
 }
 
-
 // Restreindre la requête de recherche "par défaut"
 function dw_restrict_search_query($query) {
 	if ($query->is_search && ! is_admin() && ! is_a($query, DW_CustomSearchQuery::class)) {

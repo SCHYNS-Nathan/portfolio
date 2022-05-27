@@ -90,8 +90,8 @@
             Retourner à la surface ?
         </p>
         <a class="scroll__link" href="#top" title="Pour retourner au sommet de la page !">
-            <svg width="88" height="75" viewBox="0 0 88 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M44 0L87.3013 75H0.69873L44 0Z" fill="#101214"/>
+            <svg width="88" height="75" viewBox="0 0 88 75" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 0L87.3013 75H0.69873L44 0Z" />
             </svg>
         </a>
     </div>
