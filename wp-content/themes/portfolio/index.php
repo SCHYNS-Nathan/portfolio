@@ -135,7 +135,7 @@
                 On dirait que mes projets ne sont pas disponible pour le moment, revenez plus tard !
             </p>
 	    <?php endif; ?>
-        <a class="projects__link" href="<?= get_post_type_archive_link('projets'); ?>" title="Direction la page des projets !">
+        <a class="projects__link" href="<?= site_url( 'archive/' ); ?>" title="Direction la page des projets !">
             Découvrez tous mes projets
         </a>
     </section>

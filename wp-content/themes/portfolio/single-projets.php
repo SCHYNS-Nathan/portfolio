@@ -15,7 +15,7 @@
             </p>
         </div>
         <div class="back__container">
-            <a class="back__link" href="#" title="Direction la page projets !">
+            <a class="back__link" href="<?= site_url('archive/'); ?>" title="Direction la page projets !">
                 <svg width="51" height="60" viewBox="0 0 51 60" xmlns="http://www.w3.org/2000/svg">
                     <path d="M-1.48619e-06 30L51 0.555135L51 59.4449L-1.48619e-06 30Z"/>
                 </svg>

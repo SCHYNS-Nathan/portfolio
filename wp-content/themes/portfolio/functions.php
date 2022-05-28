@@ -100,6 +100,20 @@ function dw_restrict_search_query($query) {
 }
 add_filter('pre_get_posts','dw_restrict_search_query');
 
+// Fonction pour diriger vers une page template
+function portfolio_get_template_post(string $template) {
+	$query = new WP_Query([
+		'post-type' => 'page',
+		'post-status' => 'published',
+		'meta-query' => [
+			[
+				'key' => '_wp_page_template',
+				'value' => $template . 'php'
+			]
+		]
+	]);
+	return $query->posts ?? null;
+}
 
 // Fonction permettant d'inclure des "partials" dans la vue et d'y injecter des variables "locales" (uniquement disponibles dans le scope de l'inclusion).
 function dw_include(string $partial, array $variables = [])
