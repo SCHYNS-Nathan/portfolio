@@ -1,3 +1,4 @@
+<?php /* Template Name: Archives */ ?>
 <?php get_header(); ?>
 <main class="archive">
 	<div class="archive__back">

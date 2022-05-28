@@ -23,6 +23,7 @@ body {
     font-family: Merriweather, serif;
     background-color: #EDE2BF;
     color: #F6F5EC;
+
 }
 .hidden {
     position: absolute;
@@ -391,4 +392,59 @@ p {
 .article__link:hover {
     background-color: #F6F5EC;
     color: #CF2E46;
+}
+
+
+
+h2.more__title {
+    text-align: left;
+    margin-left: 320px;
+}
+.more__list {
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 120px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.more__item {
+    display: inline-block;
+    width: 400px;
+    margin-left: 40px;
+}
+.more__item:first-child {
+    margin-left: 320px;
+}
+.more__item:last-child {
+    margin-right: 320px;
+}
+.more__link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+h3.more__title {
+    color: #F6F5EC;
+    font-family: MerriweatherBlack, serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.more__fig img {
+    width: 100%;
+    height: auto;
+}
+
+.more__list {
+    scrollbar-width: thin;
+    scrollbar-color: #F6F5EC #000000;
+}
+.more__list::-webkit-scrollbar {
+    height: 7px;
+}
+.more__list::-webkit-scrollbar-track {
+    background: #000000;
+}
+.more__list::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
 }
