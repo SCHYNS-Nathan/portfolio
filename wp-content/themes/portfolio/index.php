@@ -28,9 +28,11 @@
         </canvas>
     </div>
     <section class="index__presentation">
-        <h2 class="presentation__title">
-            Bien le bonjour !
-        </h2>
+        <div class="presentation__title">
+            <h2 class="presentation__title">
+                Bien le bonjour !
+            </h2>
+        </div>
         <div class="presentation__container">
             <p class="presentation__">
                 Je suis Nathan, un designer web et illustrateur se terrant à vingt mille lieues sous vos pieds.
@@ -41,7 +43,7 @@
                 Passer la présentation
             </a>
         </div>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Alors vous avez décidé de vous jeter corps et âme dans la descente ?
             <br>
             Bien, je vais vous accompagner dans ce cas !
@@ -77,54 +79,59 @@
                 </div>
             </form>
         </div>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Oh, si c’est à propos de ça, je peux vous informer de mon parcours !
             <br>
             Je suis un jeune homme dilômé de l’ESA St-Luc de Liège et habitué à développer sa créativité au travers de support très variés.
             <br>
             Que ce soit des livres, des sites web ou des expériences ludiques, je suis toujours partant pour créer de nouvelles choses.
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             J’ai également réalisé des études à la Haute École de la Province de Liège. C’est de là que me viennent mes compétences techniques et mon amour pour le web !
             <br>
             (Il suffit de regarder le site sur lequel vous naviguer...)
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Bref, j’espère que vous ne regrettez pas la descente.
             <br>
             Il faut dire que c’est plutôt long...
             <br>
             Je savais que j’aurais du raccourcir cette partie...
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Je peux vous parler un peu de mes hobbies si vous voulez.
             <br>
             Remarque... ce n’est pas comme si il y avait beaucoup d’autres choses à faire...
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Lorsque je n’ai pas un crayon ou une souris à la main, c’est généralement une manette que je tiens.
             <br>
             En effet, je suis un compétiteur esport depuis plusieurs années et grâce à cela, j’ai voyagé aux quatres coin de l’europe.
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Je pratiquais aussi un art martial mais le club a du fermer il y a quelques années.
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Enfin, je souhaiterais ouvrir un studio de jeu indé avec plusieurs amis afin de créer des jeux-vidéos sur notre temps libre.
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Eh bien, vous en savez des choses sur moi maintenant...
             <br>
             J’espère que cela sera réciproque dans le futur.
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Il semblerait que l’on arrive enfin au bout du tunnel !
         </p>
-        <p class="presentation__text">
+        <p class="presentation__container">
             Je vais donc vous laisser afin que vous puissiez...
         </p>
     </section>
     <section class="index__projects">
+        <div class="projects__svg">
+            <svg width="100%" height="100%" viewBox="0 0 1921 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0V0.0107422L1920 0.00976562C1920 0.00976562 1920 187.012 1920 241.012L1818 194.512L1671.5 278.012L1416 166.512L1188.5 194.512L960.002 89.5122L521.002 222.512L199.502 142.012L0.00177002 241.012L0 0Z" fill="#282F39"/>
+            </svg>
+        </div>
         <h2 class="projects__title" id="projectTitle">
             Jetez un œil à mes projets
         </h2>
@@ -138,12 +145,17 @@
         <a class="projects__link" href="<?= site_url( 'archive/' ); ?>" title="Direction la page des projets !">
             Découvrez tous mes projets
         </a>
+        <div class="projects__svg">
+            <svg width="100%" height="100%" viewBox="0 0 1920 541" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L226 218.5L492.5 282.5L627 370.5L752.5 346L957.5 463L1158 267L1367.5 331L1667 256L1920 37.5V540.5H0V0Z" fill="#282F39"/>
+            </svg>
+        </div>
     </section>
     <section class="index__contact">
         <h2 class="contact__title">
             Contactez-moi ! <em>Je ne mord pas...</em>
         </h2>
-        <form class="contact__form">
+        <form class="contact__form" method="POST" action="<?= get_home_url(); ?>/wp-admin/admin-post.php">
             <div class="form__group">
                 <label class="form__label" for="f_name">Votre nom</label>
                 <input class="form__input" id="f_name" name="f_name" type="text" placeholder="Le mien commence et termine par un S" required>
@@ -168,7 +180,11 @@
                 <textarea class="form__input" id="f_message" name="f_message" rows="5" cols="50" placeholder="Pour me communiquer vos intentions" required></textarea>
             </div>
             <br>
-            <button class="form__button" type="submit">Envoyer</button>
+            <div class="form__actions">
+                <input type="hidden" name="action" value="submit_contact_form"/>
+		        <?php wp_nonce_field('nonce_check_contact_form'); ?>
+                <button class="form__button" type="submit">Envoyer</button>
+            </div>
         </form>
         <ul class="contact__socials">
 	        <?php if(($socials = portfolio_get_socials(3))->have_posts()): while($socials->have_posts()): $socials->the_post();
