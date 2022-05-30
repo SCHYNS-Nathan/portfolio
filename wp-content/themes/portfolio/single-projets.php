@@ -3,6 +3,11 @@
     <figure class="singleProject__banner">
 	    <?= get_the_post_thumbnail(); ?>
     </figure>
+    <div class="singleProject__deco">
+        <svg width="" height="" viewBox="0 0 1920 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 22.8787C116 -25.6309 359.5 11.0918 495.5 57.9902C631.5 104.889 855.5 267.707 1106.5 219.039C1417 158.834 1735.5 170.813 1920 229.941C1920 275.229 1920 350 1920 350H0V22.8787Z" fill="#CF2E46"/>
+        </svg>
+    </div>
     <div class="singleProject__back">
         <div class="back__container">
             <a class="back__link" href="../../index.php" title="Direction la page d'accueil !">

@@ -7,7 +7,6 @@ add_action('init', 'portfolio_boot_theme', 1);
 function portfolio_boot_theme()
 {
 	load_theme_textdomain('portfolio', __DIR__ . '/locales');
-
 	if (! session_id()) {
 		session_start();
 	}

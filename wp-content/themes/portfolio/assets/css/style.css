@@ -45,7 +45,7 @@ h1, h2 {
     text-align: center;
     font-size: 50px;
 }
-p {
+p, .presentation__skip, .project__link, .projects__link {
     line-height: 1.4;
 }
 
@@ -82,7 +82,7 @@ p {
     height: 6000px;
 }
 
-.index__presentation {
+.presentation__section {
     height: 5500px;
     display: grid;
     grid-template-rows: 150px;
@@ -104,18 +104,9 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     grid-column: 1/3;
-}
-div.presentation__title {
-    background-image: url("../images/bg_title.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding-top: 35px;
-    width: 50vw;
-    margin: -60px auto 0;
 }
 .index__presentation p {
     margin-bottom: 40px;
@@ -139,6 +130,9 @@ div.presentation__title {
 #p_subject {
     background-color: #F6F5EC;
     color: #282F39;
+}
+.presentation__small {
+    font-size: 12.5px;
 }
 
 
@@ -228,6 +222,7 @@ div.presentation__title {
     text-decoration: none;
     margin: 0 auto;
     padding: 40px 120px;
+    text-align: center;
 }
 
 .index__contact {
@@ -362,15 +357,26 @@ div.presentation__title {
 .singleProject {
     background-color: #CF2E46;
 }
+
+.singleProject__banner {
+    background-color: #282F39;
+}
 .singleProject__banner img{
     width: 100%;
     height: 75vh;
     object-fit: cover;
     pointer-events: none;
+    opacity: .5;
 }
+.singleProject__deco svg {
+    margin-top: -250px;
+    position: relative;
+}
+
+
 .singleProject__back {
     position: absolute;
-    top: 160px;
+    top: 80px;
     left: 320px;
 }
 .back__container {
@@ -472,6 +478,7 @@ h3.more__title {
     font-family: MerriweatherBlack, serif;
     font-size: 20px;
     margin-top: 10px;
+    white-space: normal;
 }
 .more__fig img {
     width: 100%;
@@ -490,6 +497,285 @@ h3.more__title {
 .more__list::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
+
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (max-width: 879px) {
+    h1, h2, .scroll__text {
+        font-size: 25px;
+    }
+    .index__presentation p, .presentation__skip, .form__label, .project__description, .project__link, .projects__link, .form__button, .article__text {
+        font-size: 12px;
+    }
+    .presentation__small {
+        font-size: 8px;
+    }
+    .project__title {
+        font-size: 16px;
+    }
+
+    .index__presentation {
+        padding: 0 5vw;
+    }
+    .presentation__skip {
+        width: unset;
+    }
+    .form__group {
+        margin-bottom: 20px;
+    }
+    .form__input {
+        font-size: 12px;
+        padding: 4px;
+        border: 2px solid #F6F5EC;
+        height: 40px;
+    }
+    .index__presentation .presentation__container:nth-child(2n) {
+        margin-left: 10px;
+    }
+    .index__presentation .presentation__container:nth-child(2n+1) {
+        margin-right: 10px;
+    }
+
+    .projects__project {
+        padding: 0 7.5vw;
+        grid-template-areas:
+            "img"
+            "title"
+            "description"
+            "link";
+        max-width: 600px;
+    }
+    .projects__project:nth-child(2n+1) {
+        grid-template-areas:
+            "img"
+            "title"
+            "description"
+            "link";
+    }
+    .project__fig {
+        width: unset;
+        height: unset;
+        margin: 0 auto 20px;
+    }
+    .project__title, .projects__project:nth-child(2n+1) .project__title {
+        margin: 0 0 12px;
+    }
+
+    .project__description, .projects__project:nth-child(2n+1) .project__description {
+        margin: 0 0 40px;
+    }
+    .project__link, .projects__project:nth-child(2n+1) .project__link {
+        margin: 0;
+        height: 60px;
+    }
+    .projects__link {
+        padding: 20px 60px;
+    }
+    .index__contact {
+        padding: 0 10vw;
+    }
+    .contact__socials {
+        padding: 80px 5vw 200px;
+    }
+    .scroll__link {
+        width: 120px;
+        height: 120px;
+    }
+    .scroll__link svg {
+        width: 60px;
+        height: 60px;
+    }
+    h2.more__title {
+        margin-left: 10vw;
+    }
+
+    .archive .archive__back {
+        top: 20px;
+        left: 2.5vw;
+    }
+    .back__link {
+        width: 80px;
+        height: 80px;
+    }
+    .back__link svg {
+        width: 45px;
+        height: 35px;
+    }
+    .back__label {
+        width: 80px;
+        font-size: 12px;
+    }
+    .projects__title {
+        padding-top: 120px;
+    }
+
+    .singleProject__back {
+        left: 15vw;
+    }
+    .singleProject__article {
+        padding: 40px 5vw 80px;
+        display: block;
+    }
+    .singleProject .article__title {
+        margin-bottom: 20px;
+    }
+    .singleProject .article__image {
+        margin-bottom: 40px;
+    }
+    .singleProject .article__link {
+        font-size: 15px;
+        width: 50vw;
+        padding: 20px;
+    }
+    .more__list {
+        margin-top: 20px;
+        padding-bottom: 80px;
+    }
+    h2.more__title {
+        margin-left: 5vw;
+    }
+    .more__item:first-child {
+        margin-left: 5vw;
+    }
+    .more__item {
+        width: 250px;
+        margin-left: 20px;
+    }
+}
+@media (min-width: 880px) and (max-width: 1400px) {
+    h1, h2, .scroll__text {
+        font-size: 30px;
+    }
+    .index__presentation p, .presentation__skip, .form__label, .project__description, .project__link, .projects__link, .form__button, .article__text {
+        font-size: 15px;
+    }
+    .project__title {
+        font-size: 20px;
+    }
+
+    .index__presentation .presentation__container:nth-child(2n) {
+        margin-left: 20px;
+    }
+    .index__presentation .presentation__container:nth-child(2n+1) {
+        margin-right: 20px;
+    }
+
+    .projects__project {
+        padding: 0 5vw;
+    }
+    .project__fig {
+        width: unset;
+        height: unset;
+        min-width: 400px;
+        min-height: 250px;
+        max-width: 600px;
+        max-height: 400px;
+    }
+    .contact__socials {
+        padding: 160px 5vw 400px;
+    }
+    .scroll__link {
+        width: 120px;
+        height: 120px;
+    }
+    .scroll__link svg {
+        width: 60px;
+        height: 60px;
+    }
+    h2.more__title {
+        margin-left: 10vw;
+    }
+
+    .singleProject__back {
+        left: 15vw;
+    }
+    .singleProject__article {
+        padding: 120px 10vw 160px;
+    }
+}
+@media (min-width: 1800px) {
+    .index__presentation, .index__projects, .index__contact, .singleProject__article {
+        padding: 0;
+    }
+    .presentation__section, .projects__section, .contact__section, .singleProject__article, .archive .projects__project {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .projects__project {
+        padding: 0;
+    }
+    .singleProject__article {
+        padding-bottom: 160px;
+    }
+}
+@media (max-width: 480px) {
+    #canvas {
+        opacity: 0;
+    }
+    .index__presentation {
+        padding: 0 5vw;
+    }
+    .presentation__section {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .index__presentation .presentation__container:nth-child(2n) {
+        margin-left: 0;
+        grid-column: 1/2;
+    }
+    .index__presentation .presentation__container:nth-child(2n+1) {
+        margin-right: 0;
+        grid-column: 1/2;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .index__presentation p {
+        font-size: 15px;
+    }
+    .presentation__small {
+        font-size: 10px;
+    }
+    .projects__title {
+        margin-bottom: 40px;
+    }
+    .projects__project {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+    .project__fig {
+        max-width: 90vw;
+    }
+    .project__title, .project__description {
+        padding: 0 20px;
+    }
+    .project__link, .projects__project:nth-child(2n+1) .project__link {
+        padding: 0 20px;
+        margin: 0 auto;
+        width: 60vw;
+    }
+    .projects__link {
+        margin: 0 auto;
+        padding: 20px 25px;
+    }
+    .socials__link {
+        width: 60px;
+        height: 60px;
+    }
+    .socials__link svg {
+        width: 30px;
+        height: 30px;
+    }
+    .scroll__link {
+        width: 80px;
+        height: 80px;
+    }
+    .scroll__link svg {
+        width: 45px;
+    }
+}
+
 
 
 /* ---------- CSS ANIMATION ---------- */
