@@ -79,7 +79,6 @@ p, .presentation__skip, .project__link, .projects__link {
     left: 50%;
     transform: translate(-50%, -16.66666666666667vw);
     width: 16.66666666666667vw;
-    height: 6000px;
 }
 
 .presentation__section {
@@ -177,7 +176,7 @@ p, .presentation__skip, .project__link, .projects__link {
 .project__fig {
     grid-area: img;
     width: 600px;
-    height: 400px;
+    height: 100%;
 }
 .project__fig img {
     width: 100%;
@@ -670,7 +669,6 @@ h3.more__title {
         min-width: 400px;
         min-height: 250px;
         max-width: 600px;
-        max-height: 400px;
     }
     .contact__socials {
         padding: 160px 5vw 400px;

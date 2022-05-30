@@ -17,7 +17,7 @@
     <title><?= wp_title('|', false, 'right') . get_bloginfo('name') ?></title>
 
     <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri(); ?>/assets/css/style.css">
-    <!-- <script type="text/javascript" src="<?= get_template_directory_uri(); ?>" defer></script>-->
+    <script type="text/javascript" src="<?= get_template_directory_uri(); ?>/assets/js/main.js" defer></script>
 </head>
 <body>
 <h1 class="title hidden"><?= get_bloginfo('name'); ?></h1>
