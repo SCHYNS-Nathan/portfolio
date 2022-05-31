@@ -279,6 +279,26 @@ p, .presentation__skip, .project__link, .projects__link {
     padding: 20px 120px;
     cursor: pointer;
 }
+
+.eye {
+    position: absolute;
+    background-color: #F6F5EC;
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+}
+.eye::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #282F39;
+    border-radius: 50%;
+}
+
 .contact__socials {
     display: flex;
     justify-content: space-between;

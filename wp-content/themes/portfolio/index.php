@@ -188,6 +188,24 @@
                 <br>
                 <button class="form__button" type="submit">Envoyer</button>
             </form>
+            <div class="contact__background">
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
             <ul class="contact__socials">
 		        <?php if(($socials = portfolio_get_socials(3))->have_posts()): while($socials->have_posts()): $socials->the_post();
 			        include ( __DIR__ . '/assets/partials/social.php');
