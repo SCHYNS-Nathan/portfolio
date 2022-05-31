@@ -1,4 +1,4 @@
-<article class="projects__project">
+<article class="projects__project fade-in">
 	<h3 class="project__title">
         <?= get_field('title'); ?>
 	</h3>

@@ -1,4 +1,4 @@
-<li class="more__item">
+<li class="more__item fade-in">
 	<a class="more__link" href="<?= get_the_permalink(); ?>" title="Direction la page de présentation du projet !">
 		<h3 class="more__title">
 			<?= get_field('title'); ?>

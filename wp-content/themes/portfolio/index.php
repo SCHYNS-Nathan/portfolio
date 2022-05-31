@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="index">
-    <div class="index__landscape" id="top">
+    <div class="index__landscape" id="to_the_top">
         <div class="landscape__logo">
             <svg width="100%" height="100%" viewBox="0 0 336 336" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="168" cy="168" r="168" fill="#282F39"/>
@@ -23,54 +23,54 @@
                 <path d="M0.500002 10.9254C168 -11.4213 347.5 1.99467 480.5 44.5145C613.5 87.0343 900 249.777 1105 249.777C1310 249.777 1598 117.191 1672 107.757C1746 98.3233 1842.5 118.681 1920.5 152.945C1920.5 206.574 1920.5 346.61 1920.5 400.24H0.5L0.500002 10.9254Z" fill="#282F39"/>
             </svg>
         </div>
-        <canvas id="canvas">
-        </canvas>
+        <canvas id="canvas"></canvas>
+        <span class="canvas__elements"></span>
     </div>
     <section class="index__presentation">
         <div class="presentation__section">
             <div class="presentation__title">
-                <h2 class="presentation__title">
+                <h2 class="presentation__title fade-in">
                     Bien le bonjour !
                 </h2>
             </div>
             <div class="presentation__container">
-                <p class="presentation__">
+                <p class="presentation__ fade-in">
                     Je suis Nathan, un designer web et illustrateur se terrant à vingt mille lieues sous vos pieds.
                     <br><br>
                     Si vous voulez atteindre mon antre, il va falloir plonger !
                 </p>
-                <a class="presentation__skip" href="#projectTitle">
+                <a class="presentation__skip fade-in" href="#down_we_go">
                     Passer la présentation
                 </a>
             </div>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Alors vous avez décidé de vous jeter corps et âme dans la descente ?
                 <br><br>
                 Bien, je vais vous accompagner dans ce cas !
             </p>
             <div class="presentation__container">
-                <p class="presentation__">
+                <p class="presentation__ fade-in">
                     Parlez moi un peu de vous, comment vous vous appelez ?
                 </p>
                 <form class="presentation__form">
-                    <div class="form__group">
+                    <div class="form__group fade-in">
                         <label class="form__label" for="p_name">Votre nom</label>
                         <input class="form__input" id="p_name" name="p_name" type="text" placeholder="Le mien commence et termine par un S">
                     </div>
-                    <div class="form__group">
+                    <div class="form__group fade-in">
                         <label class="form__label" for="p_firstname">Votre prénom</label>
                         <input class="form__input" id="p_firstname" name="p_firstname" type="text" placeholder="Vous connaissez déjà le mien !">
                     </div>
                 </form>
             </div>
             <div class="presentation__container">
-                <p class="presentation__">
+                <p class="presentation__ fade-in">
                     Je vois je vois.
                     <br>
                     Et qu’est-ce qui vous amène ici exactement ?
                 </p>
                 <form class="presentation__form">
-                    <div class="form__group">
+                    <div class="form__group fade-in">
                         <label class="form__label" for="p_subject">C'est à quel sujet ?</label>
                         <select class="form__input" id="p_subject" name="p_subject">
                             <option value="web_site">Un site web</option>
@@ -79,52 +79,52 @@
                     </div>
                 </form>
             </div>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Oh, si c’est à propos de ça, je peux vous parler de mon parcours !
                 <br><br>
                 Je suis un jeune homme diplômé de l’ESA St-Luc Liège et habitué à développer sa créativité au travers de support très variés.
                 <br><br>
                 Que ce soit des livres, des sites web ou des expériences ludiques, je suis toujours partant pour créer de nouvelles choses.
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 J’ai également réalisé des études à la Haute École de la Province de Liège. C’est de là que me viennent mes compétences techniques et mon amour pour le web !
                 <br><br>
                 (Il suffit de regarder le site sur lequel vous naviguer...)
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Bref, j’espère que vous ne regrettez pas la descente.
                 <br><br>
                 Il faut dire que c’est plutôt long...
                 <br><br>
                 <span class="presentation__small">Je savais que j’aurais du raccourcir cette partie...</span>
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Je peux vous parler un peu de mes hobbies si vous voulez.
                 <br><br>
                 Remarque... ce n’est pas comme s'il y avait beaucoup d’autres choses à faire...
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Lorsque je n’ai pas un crayon ou une souris à la main, c’est généralement une manette que je tiens.
                 <br><br>
                 En effet, je suis un compétiteur e-sport depuis plusieurs années et grâce à cela, j’ai voyagé aux quatre coins de l’Europe.
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Mis à part cela, je m'intéresse aussi à la publication d'un livre pour enfant durant mon temps libre.
                 <br><br>
                 Et une fois cela fait, je me concentrerais sur la création d'un jeu vidéo avec quelques amis.
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Sans parler des illustrations que je fais sur commande bien sûr !
                 <br><br>
                 Cela me fait quelques projets à terminer.
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Il semblerait que l’on arrive enfin au bout du tunnel !
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 Je vais donc vous laisser découvrir cette partie vous-même.
             </p>
-            <p class="presentation__container">
+            <p class="presentation__container fade-in">
                 À tout à l'heure !
             </p>
         </div>
@@ -136,7 +136,7 @@
             </svg>
         </div>
         <div class="projects__section">
-            <h2 class="projects__title" id="projectTitle">
+            <h2 class="projects__title fade-in" id="down_we_go">
                 Jetez un œil à mes projets
             </h2>
 	        <?php if(($modules = portfolio_get_projects(3))->have_posts()): while($modules->have_posts()): $modules->the_post();
@@ -146,7 +146,7 @@
                     On dirait que mes projets ne sont pas disponible pour le moment, revenez plus tard !
                 </p>
 	        <?php endif; ?>
-            <a class="projects__link" href="<?= site_url( 'archive/' ); ?>" title="Direction la page des projets !">
+            <a class="projects__link fade-in" href="<?= site_url( 'archive/' ); ?>" title="Direction la page des projets !">
                 Découvrez tous mes projets
             </a>
         </div>
@@ -158,54 +158,10 @@
     </section>
     <section class="index__contact">
         <div class="contact__section">
-            <h2 class="contact__title">
+            <h2 class="contact__title fade-in">
                 Contactez-moi ! <em>Je ne mord pas...</em>
             </h2>
-            <form class="contact__form" method="POST" action="<?= get_home_url(); ?>/wp-admin/admin-post.php">
-                <div class="form__group">
-                    <label class="form__label" for="f_name">Votre nom</label>
-                    <input class="form__input" id="f_name" name="f_name" type="text" placeholder="Le mien commence et termine par un S" required>
-                </div>
-                <div class="form__group">
-                    <label class="form__label" for="f_firstname">Votre prénom</label>
-                    <input class="form__input" id="f_firstname" name="f_firstname" type="text" placeholder="Vous connaissez déjà le mien" required>
-                </div>
-                <div class="form__group">
-                    <label class="form__label" for="f_email">Votre adresse email</label>
-                    <input class="form__input" id="f_email" name="f_email" type="email" placeholder="Afin que je vous garde à l'œil" size="28" required>
-                </div>
-                <div class="form__group">
-                    <label class="form__label" for="f_subject">C'est à quel sujet ?</label>
-                    <select class="form__input" id="f_subject" name="f_subject">
-                        <option value="web_site">Un site web</option>
-                        <option value="illu">Une illustration</option>
-                    </select>
-                </div>
-                <div class="form__group">
-                    <label class="form__label" for="f_message">Votre message</label>
-                    <textarea class="form__input" id="f_message" name="f_message" rows="5" cols="50" placeholder="Pour me communiquer vos intentions" required></textarea>
-                </div>
-                <br>
-                <button class="form__button" type="submit">Envoyer</button>
-            </form>
-            <div class="contact__background">
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-                <div class="eye"></div>
-            </div>
+            <?= do_shortcode('[contact-form-7 id="68" title="Formulaire de contact"]') ?>
             <ul class="contact__socials">
 		        <?php if(($socials = portfolio_get_socials(3))->have_posts()): while($socials->have_posts()): $socials->the_post();
 			        include ( __DIR__ . '/assets/partials/social.php');
@@ -215,11 +171,78 @@
             </ul>
         </div>
     </section>
+    <div class="contact__background">
+        <div class="eyes eyes_0">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_1">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_2">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_3">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_4">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_5">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_6">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_7">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_8">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_9">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_10">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_11">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+        <div class="eyes eyes_12">
+            <span class="eye-lash up"></span>
+            <span class="eye_retina"></span>
+            <span class="eye-lash down"></span>
+        </div>
+    </div>
     <div class="index__scroll">
-        <p class="scroll__text">
+        <p class="scroll__text fade-in">
             Retourner à la surface ?
         </p>
-        <a class="scroll__link" href="#top" title="Pour retourner au sommet de la page !">
+        <a class="scroll__link fade-in" href="#to_the_top" title="Pour retourner au sommet de la page !">
             <svg width="88" height="75" viewBox="0 0 88 75" xmlns="http://www.w3.org/2000/svg">
                 <path d="M44 0L87.3013 75H0.69873L44 0Z" />
             </svg>

@@ -12,7 +12,7 @@
 		</p>
 	</div>
 	<section class="archive__projects">
-		<h2 class="projects__title">
+		<h2 class="projects__title fade-in">
 			Découvrez tous mes projets
 		</h2>
 		<?php if(($modules = portfolio_get_projects(10))->have_posts()): while($modules->have_posts()): $modules->the_post();
