@@ -580,7 +580,7 @@ p, .presentation__skip, .project__link, .projects__link {
     margin-bottom: 40px;
 }
 .article__image img {
-    width: auto;
+    width: 100%;
     height: auto;
 }
 .article__text:nth-of-type(2) {
@@ -657,6 +657,40 @@ h3.more__title {
 .more__list::-webkit-scrollbar-thumb {
     background-color: #ffffff;
 }
+
+
+/* ---------- ERROR 404 ---------- */
+.error404 {
+    background-color: #CF2E46;
+    height: 100vh;
+}
+.error404__title {
+    text-align: center;
+    font-family: MerriweatherBlack, serif;
+    font-size: 150px;
+    padding-top: 20vh;
+}
+.error404__text {
+    text-align: center;
+    font-family: MerriweatherBlack, serif;
+    font-size: 50px;
+}
+.error404__link {
+    grid-column: 1/3;
+    display: table;
+    font-family: InterBlack, sans-serif;
+    font-size: 20px;
+    width: 50vw;
+    background-color: #282F39;
+    color: #F6F5EC;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 10vh auto;
+    padding: 40px;
+}
+
+
 
 
 /* ---------- MEDIA QUERIES ---------- */
@@ -806,6 +840,25 @@ h3.more__title {
     .contact__background {
         visibility: hidden;
     }
+
+
+
+
+    .error404__title {
+        text-align: center;
+        font-family: MerriweatherBlack, serif;
+        font-size: 100px;
+        padding-top: 20vh;
+    }
+    .error404__text {
+        font-size: 25px;
+    }
+    .error404__link {
+        font-size: 15px;
+        width: 75vw;
+        margin: 10vh auto;
+        padding: 20px;
+    }
 }
 @media (min-width: 880px) and (max-width: 1400px) {
     h1, h2, .scroll__text {
@@ -847,6 +900,9 @@ h3.more__title {
         height: 60px;
     }
     h2.more__title {
+        margin-left: 10vw;
+    }
+    .more__item:first-child {
         margin-left: 10vw;
     }
 
@@ -943,7 +999,6 @@ h3.more__title {
 }
 
 
-
 /* ---------- CSS ANIMATION ---------- */
 .presentation__skip:hover {
     background-color: #CF2E46;
@@ -986,6 +1041,10 @@ h3.more__title {
     fill: #F6F5EC;
 }
 .article__link:hover {
+    background-color: #F6F5EC;
+    color: #CF2E46;
+}
+.error404__link:hover {
     background-color: #F6F5EC;
     color: #CF2E46;
 }

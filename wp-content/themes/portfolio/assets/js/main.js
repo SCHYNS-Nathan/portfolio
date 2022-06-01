@@ -26,11 +26,10 @@ if (!document.URL.includes("archive") && !document.URL.includes("projects")) {
     const canvas = document.getElementById("canvas");
     let canvasHeight = document.querySelector(".index__presentation");
 
-    canvas.width = window.innerWidth/6;
-    canvas.height = canvasHeight.clientHeight + (canvas.width*2);
-    console.log(canvasHeight)
-
-
+    window.addEventListener('load', () => {
+        canvas.width = window.innerWidth/6;
+        canvas.height = canvasHeight.clientHeight + (canvas.width*2);
+    })
     window.addEventListener('resize', () => {
         console.log(canvasHeight)
         canvas.width = window.innerWidth/6;

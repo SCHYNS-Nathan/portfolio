@@ -161,7 +161,7 @@
             <h2 class="contact__title fade-in">
                 Contactez-moi ! <em>Je ne mord pas...</em>
             </h2>
-            <?= do_shortcode('[contact-form-7 id="68" title="Formulaire de contact"]') ?>
+            <?= do_shortcode('[contact-form-7 id="72" title="Formulaire de contact"]') ?>
             <ul class="contact__socials">
 		        <?php if(($socials = portfolio_get_socials(3))->have_posts()): while($socials->have_posts()): $socials->the_post();
 			        include ( __DIR__ . '/assets/partials/social.php');
