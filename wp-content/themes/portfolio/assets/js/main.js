@@ -96,6 +96,3 @@ const obs = new IntersectionObserver(cb);
 for(let i=0; i < items.length; i++){
     obs.observe(items[i]);
 }
-
-
-

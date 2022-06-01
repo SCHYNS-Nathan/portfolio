@@ -1,5 +1,5 @@
-<article class="projects__project fade-in">
-	<h3 class="project__title">
+<article class="projects__project fade-in" aria-labelledby="<?= get_field('title'); ?>">
+	<h3 class="project__title" id="<?= get_field('title'); ?>" aria-level="3">
         <?= get_field('title'); ?>
 	</h3>
     <figure class="project__fig">

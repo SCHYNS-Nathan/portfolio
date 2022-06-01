@@ -28,8 +28,8 @@
     </div>
     <section class="index__presentation">
         <div class="presentation__section">
-            <div class="presentation__title">
-                <h2 class="presentation__title fade-in">
+            <div class="presentation__title" aria-labelledby="presentationTitle">
+                <h2 class="presentation__title fade-in" id="presentationTitle" aria-level="2">
                     Bien le bonjour !
                 </h2>
             </div>
@@ -135,8 +135,8 @@
                 <path d="M0 0V0.0107422L1920 0.00976562C1920 0.00976562 1920 187.012 1920 241.012L1818 194.512L1671.5 278.012L1416 166.512L1188.5 194.512L960.002 89.5122L521.002 222.512L199.502 142.012L0.00177002 241.012L0 0Z" fill="#282F39"/>
             </svg>
         </div>
-        <div class="projects__section">
-            <h2 class="projects__title fade-in" id="down_we_go">
+        <div class="projects__section" aria-labelledby="down_we_go">
+            <h2 class="projects__title fade-in" id="down_we_go" aria-level="2">
                 Jetez un œil à mes projets
             </h2>
 	        <?php if(($modules = portfolio_get_projects(3))->have_posts()): while($modules->have_posts()): $modules->the_post();
@@ -157,8 +157,8 @@
         </div>
     </section>
     <section class="index__contact">
-        <div class="contact__section">
-            <h2 class="contact__title fade-in">
+        <div class="contact__section" aria-labelledby="contactTitle">
+            <h2 class="contact__title fade-in" id="contactTitle" aria-level="2">
                 Contactez-moi ! <em>Je ne mord pas...</em>
             </h2>
             <?= do_shortcode('[contact-form-7 id="72" title="Formulaire de contact"]') ?>
