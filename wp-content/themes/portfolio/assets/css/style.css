@@ -36,6 +36,12 @@ body {
     background-color: #F6F5EC;
     color: #282F39;
 }
+:focus {
+    outline-color: #CF2E46;
+}
+.projects__section :focus {
+    outline-color: #F6F5EC;
+}
 .form__input::selection, button::selection {
     color: #F6F5EC;
     background-color: #282F39;
@@ -290,6 +296,15 @@ p, .presentation__skip, .project__link, .projects__link {
     padding: 20px 120px;
     cursor: pointer;
 }
+.screen-reader-response p {
+    margin-bottom: 20px;
+    color: #CF2E46;
+}
+.wpcf7-response-output {
+    margin-top: 20px;
+    color: #CF2E46;
+}
+
 
 .contact__background {
     position: absolute;

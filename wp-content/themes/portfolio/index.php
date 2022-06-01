@@ -227,11 +227,6 @@
             <span class="eye_retina"></span>
             <span class="eye-lash down"></span>
         </div>
-        <div class="eyes eyes_11">
-            <span class="eye-lash up"></span>
-            <span class="eye_retina"></span>
-            <span class="eye-lash down"></span>
-        </div>
         <div class="eyes eyes_12">
             <span class="eye-lash up"></span>
             <span class="eye_retina"></span>
