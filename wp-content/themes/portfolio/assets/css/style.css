@@ -929,14 +929,21 @@ h3.more__title {
     }
 }
 @media (max-width: 480px) {
-    #canvas {
+    .landscape__forground {
         visibility: hidden;
+    }
+    #canvas {
+        width: 80vw;
+        transform: translate(-50%, -4vh);
+        height: 5600px;
+
     }
     .canvas__elements {
         visibility: hidden;
     }
     .index__presentation {
-        padding: 0 5vw;
+        padding: 0 15vw;
+        margin-top: -5vh;
     }
     .presentation__section {
         grid-template-columns: 1fr;
@@ -953,6 +960,15 @@ h3.more__title {
         margin-top: 0;
     }
 
+    .presentation__container {
+        position: relative;
+    }
+    .presentation__container input {
+        background-color: rgba(40, 47, 57, 0.5);
+    }
+    .presentation__title:first-child {
+        background-color: transparent;
+    }
     .index__presentation p {
         font-size: 15px;
     }

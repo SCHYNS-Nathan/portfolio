@@ -50,7 +50,7 @@
             </p>
             <div class="presentation__container">
                 <p class="presentation__ fade-in">
-                    Parlez moi un peu de vous, comment vous vous appelez ?
+                    Parlez-moi un peu de vous, comment vous vous appelez ?
                 </p>
                 <form class="presentation__form">
                     <div class="form__group fade-in">
@@ -82,21 +82,21 @@
             <p class="presentation__container fade-in">
                 Oh, si c’est à propos de ça, je peux vous parler de mon parcours !
                 <br><br>
-                Je suis un jeune homme diplômé de l’ESA St-Luc Liège et habitué à développer sa créativité au travers de support très variés.
+                Je suis un jeune homme diplômé de l’ESA St-Luc Liège et habitué à développer sa créativité au travers de support très varié.
                 <br><br>
                 Que ce soit des livres, des sites web ou des expériences ludiques, je suis toujours partant pour créer de nouvelles choses.
             </p>
             <p class="presentation__container fade-in">
                 J’ai également réalisé des études à la Haute École de la Province de Liège. C’est de là que me viennent mes compétences techniques et mon amour pour le web !
                 <br><br>
-                (Il suffit de regarder le site sur lequel vous naviguer...)
+                (Il suffit de regarder le site sur lequel vous naviguez...)
             </p>
             <p class="presentation__container fade-in">
                 Bref, j’espère que vous ne regrettez pas la descente.
                 <br><br>
                 Il faut dire que c’est plutôt long...
                 <br><br>
-                <span class="presentation__small">Je savais que j’aurais du raccourcir cette partie...</span>
+                <span class="presentation__small">Je savais que j’aurais dû raccourcir cette partie...</span>
             </p>
             <p class="presentation__container fade-in">
                 Je peux vous parler un peu de mes hobbies si vous voulez.
@@ -109,7 +109,7 @@
                 En effet, je suis un compétiteur e-sport depuis plusieurs années et grâce à cela, j’ai voyagé aux quatre coins de l’Europe.
             </p>
             <p class="presentation__container fade-in">
-                Mis à part cela, je m'intéresse aussi à la publication d'un livre pour enfant durant mon temps libre.
+                Mis à part cela, je m'intéresse aussi à la publication d'un livre pour enfants durant mon temps libre.
                 <br><br>
                 Et une fois cela fait, je me concentrerais sur la création d'un jeu vidéo avec quelques amis.
             </p>
