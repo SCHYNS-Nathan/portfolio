@@ -832,6 +832,9 @@ h3.more__title {
     .more__item:first-child {
         margin-left: 5vw;
     }
+    .more__item:last-child {
+        margin-right: 5vw;
+    }
     .more__item {
         width: 250px;
         margin-left: 20px;
@@ -904,6 +907,9 @@ h3.more__title {
     }
     .more__item:first-child {
         margin-left: 10vw;
+    }
+    .more__item:last-child {
+        margin-right: 10vw;
     }
 
     .singleProject__back {

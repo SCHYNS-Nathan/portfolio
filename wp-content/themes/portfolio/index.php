@@ -82,7 +82,7 @@
             <p class="presentation__container fade-in">
                 Oh, si c’est à propos de ça, je peux vous parler de mon parcours !
                 <br><br>
-                Je suis un jeune homme diplômé de l’ESA St-Luc Liège et habitué à développer sa créativité au travers de support très varié.
+                Je suis un jeune homme diplômé de l’ESA St-Luc Liège et habitué à développer sa créativité au travers de supports très variés.
                 <br><br>
                 Que ce soit des livres, des sites web ou des expériences ludiques, je suis toujours partant pour créer de nouvelles choses.
             </p>

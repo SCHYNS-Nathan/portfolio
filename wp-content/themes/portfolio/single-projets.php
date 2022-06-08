@@ -38,13 +38,13 @@
 	        <?= get_field('text_1', false, false); ?>
         </p>
         <figure class="article__image">
-	        <?= wp_get_attachment_image(get_field('image_1', false, false)); ?>
+	        <?= wp_get_attachment_image(get_field('image_1', false, false), array('400', '400')); ?>
         </figure>
         <p class="article__text">
 		    <?= get_field('text_2', false, false); ?>
         </p>
         <figure class="article__image">
-	        <?= wp_get_attachment_image(get_field('image_2', false, false)); ?>
+	        <?= wp_get_attachment_image(get_field('image_2', false, false), array('400', '400')); ?>
         </figure>
         <a class="article__link" href="<?=  get_field('link', false, false); ?>" title="Direction le site du projet !">
             Accéder au site
