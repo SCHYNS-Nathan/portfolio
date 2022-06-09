@@ -299,10 +299,12 @@ p, .presentation__skip, .project__link, .projects__link {
 .screen-reader-response p {
     margin-bottom: 20px;
     color: #CF2E46;
+    text-align: center;
 }
 .wpcf7-response-output {
     margin-top: 20px;
     color: #CF2E46;
+    text-align: center;
 }
 
 

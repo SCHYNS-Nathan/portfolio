@@ -46,7 +46,7 @@
         <figure class="article__image">
 	        <?= wp_get_attachment_image(get_field('image_2', false, false), array('400', '400')); ?>
         </figure>
-        <a class="article__link" href="<?=  get_field('link', false, false); ?>" title="Direction le site du projet !">
+        <a class="article__link" href="<?= get_field('link', false, false); ?>" title="Direction le site du projet !">
             Accéder au site
         </a>
     </article>
