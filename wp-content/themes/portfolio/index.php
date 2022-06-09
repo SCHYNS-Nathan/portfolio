@@ -27,7 +27,7 @@
         <span class="canvas__elements"></span>
     </div>
     <section class="index__presentation">
-        <div class="presentation__section">
+        <div class="presentation__section" itemscope itemtype="https://schema.org/Person">
             <div class="presentation__title" aria-labelledby="presentationTitle">
                 <h2 class="presentation__title fade-in" id="presentationTitle" aria-level="2">
                     Bien le bonjour !
@@ -35,7 +35,7 @@
             </div>
             <div class="presentation__container">
                 <p class="presentation__ fade-in">
-                    Je suis Nathan, un designer web et illustrateur se terrant à vingt mille lieues sous vos pieds.
+                    Je suis <span itemprop="givenName">Nathan</span>, un <span itemprop="jobTitle">designer web et illustrateur</span> se terrant à vingt mille lieues sous vos pieds.
                     <br><br>
                     Si vous voulez atteindre mon antre, il va falloir plonger !
                 </p>
@@ -82,12 +82,12 @@
             <p class="presentation__container fade-in">
                 Oh, si c’est à propos de ça, je peux vous parler de mon parcours !
                 <br><br>
-                Je suis un jeune homme diplômé de l’ESA St-Luc Liège et habitué à développer sa créativité au travers de supports très variés.
+                Je suis un jeune <span itemprop="gender">homme</span> diplômé de l'<span itemprop="alumniOf">ESA St-Luc Liège</span> et habitué à développer sa créativité au travers de supports très variés.
                 <br><br>
                 Que ce soit des livres, des sites web ou des expériences ludiques, je suis toujours partant pour créer de nouvelles choses.
             </p>
             <p class="presentation__container fade-in">
-                J’ai également réalisé des études à la Haute École de la Province de Liège. C’est de là que me viennent mes compétences techniques et mon amour pour le web !
+                J’ai également réalisé des études à la <span itemprop="alumniOf">Haute École de la Province de Liège</span>. C’est de là que me viennent mes compétences techniques et mon amour pour le web !
                 <br><br>
                 (Il suffit de regarder le site sur lequel vous naviguez...)
             </p>
