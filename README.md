@@ -6,22 +6,22 @@ Dans le cadre du cours de design web, il nous a été demandé de créer un port
 
 
 
-https://www.figma.com/file/hfdnFHIJq8vCC6oaiQ3ZHM/Portfolio?node-id=0%3A1
-
-
 ## Le design
 
 Je vais d'abords commencer par parler du design et de la maquette de ce site web.
 
 Ma première inspiration était de créer une page dont l'apparence se base sur des affiches d'illustration contemporaine. Mes premier croquis et maquettes reflètent donc cet aspect graphique.
 
-J'ai ensuite essayer d'amener un aspect plus ludique à la page en rajoutant une sorte de petit menu sous forme de question réponse. Cependant, la navigation devenait trop confuse et les visiteurs n'étaient pas encouragés à visiter le site.
+J'ai ensuite essayer d'amener un aspect plus ludique à la page en rajoutant une sorte de petit menu sous forme de question-réponse. Cependant, la navigation devenait trop confuse et les visiteurs n'étaient pas encouragés à visiter l'entièreté du site.
 
-Grâce aux retours de madame Wera, j'ai donc chercher un nouveau concept de navigation afin d'encourager les visisteurs à explorer d'avantage le site.
+Grâce aux retours de madame Wera, j'ai donc cherché un nouveau concept de navigation afin d'encourager les visisteurs à explorer d'avantage le site.
 
 Ma première idée était d'ajouter un fil rouge à suivre tout au long de la page comme sur ce site : https://atlus.com/p5r/index.html J'ai cependant assez vite abandonné cette approche car le rendu n'était pas très engageant et le concept pas si fort que ça.
 
 Je me suis alors tourné vers un site dont l'on nous avait parlé plus tôt dans l'année, Garden Studio : https://gardenestudio.com.br/en#o-estudio J'ai beaucoup aimé le concept de navigation et l'aspect "exploration" d'un paysage du site. Je suis donc parti sur un concept de navigation similaire tout en y ajoutant ma patte graphique.
+
+Si vous souhaitez observer ces maquettes, je vous invite à vous rendre sur le lien ci-dessous :
+https://www.figma.com/file/hfdnFHIJq8vCC6oaiQ3ZHM/Portfolio?node-id=0%3A1
 
 
 
