@@ -20,19 +20,39 @@ Ma première idée était d'ajouter un fil rouge à suivre tout au long de la pa
 
 Je me suis alors tourné vers un site dont l'on nous avait parlé plus tôt dans l'année, Garden Studio : https://gardenestudio.com.br/en#o-estudio J'ai beaucoup aimé le concept de navigation et l'aspect "exploration" d'un paysage du site. Je suis donc parti sur un concept de navigation similaire tout en y ajoutant ma patte graphique.
 
-Si vous souhaitez observer ces maquettes, je vous invite à vous rendre sur le lien ci-dessous :
+Si vous souhaitez observer ces maquettes, je vous invite à suivre ce lien :
 https://www.figma.com/file/hfdnFHIJq8vCC6oaiQ3ZHM/Portfolio?node-id=0%3A1
 
 
 
 
 
+## La réalisation
+
+### HTML et Wordpress
+
+Étant l'un des premiers sites que j'ai développer sous Wordpress, ce portfolio m'a apporté son lot d'apprentissage et de problèmes à régler !
+
+Je n'ai pas véritablement eu de problème avec la partie HTML, mais les ajouts de PHP via Wordpress m'ont parfois causé quelques problèmes. C'est par exemple le cas de certaines images qui ne voulaient pas se redimmensionner à la bonne taille car il fallait ajouter des paramètres en plus, l'extension de formulaire que j'utilise (Contact Form 7) à lui aussi poser plusieurs problèmes et à l'heure ou j'écris ces lignes, je n'arrive toujours pas à récupérer les emails comme je le voudrais, ...
+
+J'ai néanmoins réussi à créer le système de navigation et une page d'achive via un template. J'ai aussi réussi à générer les projets et le contenu comme il fallait.
 
 
+### CSS
+
+Le CSS ne m'a pas vraiment posé de problèmes même s'il n'est pas tout à fait terminé. En effet, à cause d'un manque de temps, je n'ai pas pu convertir les unités -px en -em. Magré cela, je suis plutôt satisfait du résultat !
 
 
-## Optimisations
+### JS
 
+Comme pour le CSS, le Javascript ne m'a posé de problèmes mais il n'est pas aussi complet que je le voudrais. Je voulais effectivement ajouter des sortes de petites bulles qui remontaient dans le canvas de la section présentation. Malheureusement, je n'ai pas eu le temps d'ajouter cette fonctionnalité pour ce jury et je l'ajouterai donc probablement plsu tard.
+
+Mis à part cela, j'ai ajouter plusieurs petites features via JS. L'effet "fade-in on scroll" directement repris de mon projet CV, des champs de formulaire dans la section présentation liés à ceux dans le formulaire de contact et aussi une petite surprise lorsque l'on tente de compléter le formulaire de contact !
+
+
+### Images
+
+Les images étant différents pour chaques projets, j'ai préféré utiliser la gestion des images via Wordpress. J'ai tout de même utilisés un plugin afin d'optimiser ces images pour qu'elles ne soient pas trop volumineuses.
 
 
 ## Quelques tests
