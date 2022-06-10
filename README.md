@@ -54,17 +54,16 @@ Mis à part cela, j'ai ajouter plusieurs petites features via JS. L'effet "fade-
 
 Les images étant différents pour chaques projets, j'ai préféré utiliser la gestion des images via Wordpress. J'ai tout de même utilisés un plugin afin d'optimiser ces images pour qu'elles ne soient pas trop volumineuses.
 
+Aussi, il est bon de noter que toutes les transitions de section, les logos et autres éléments simple ont été réalisé avec du SVG inline !
+
 
 ## Quelques tests
 
-Voici un test effectué sur GTMetrix :
+Voici deux tests effectués sur le Lighthouse de Google (respectivement, la version desktop et la version mobile) :
 
-![Test GTMetrix: Grade B | Performances 84% | Structure 93% | Largest contentful paint 1.3s | Total blockin time 0ms | Cumulative layout shift 0.4](https://user-images.githubusercontent.com/90833102/173080786-37a219e0-1867-4bfe-83c4-c4a2aa245be5.png)
+![Test Google Lighthouse: Performance 98 | Accessibility 98 | Best practices 92 | SEO 100](https://user-images.githubusercontent.com/90833102/173095219-feb00b5a-bce8-40da-ac4c-47e6ceb517d0.png)
 
 
-Et voici deux tests effectués sur le Lighthouse de Google (respectivement, la version desktop et la version mobile) :
+![Test Google Lighthouse: Performance 85 | Accessibility 98 | Best practices 100 | SEO 100](https://user-images.githubusercontent.com/90833102/173095323-01235065-8732-4a58-b2f9-0432c6c29074.png)
 
-![Test Google Lighthouse: Performance 89 | Accessibility 89 | Best practices 92 | SEO 91](https://user-images.githubusercontent.com/90833102/173081059-5d16e8e2-21e1-4efd-982d-175e0ad28e33.png)
-
-![Test Google Lighthouse: Performance 94 | Accessibility 89 | Best practices 83 | SEO 92](https://user-images.githubusercontent.com/90833102/173081456-a011b5a5-7852-4b8b-b0a4-6f53a1da9c5a.png)
 
