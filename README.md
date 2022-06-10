@@ -67,3 +67,20 @@ Voici deux tests effectués sur le Lighthouse de Google (respectivement, la vers
 ![Test Google Lighthouse: Performance 85 | Accessibility 98 | Best practices 100 | SEO 100](https://user-images.githubusercontent.com/90833102/173095323-01235065-8732-4a58-b2f9-0432c6c29074.png)
 
 
+Les résultats sont plutôt bons dans l'ensemble mais la version mobile à quelques problèmes de performances.
+
+
+
+
+
+## Accessibilité
+
+Au niveau de l'accessibilité, le site est :
+
+- entièrement navigable au clavier ;
+- adapté aux différents daltonismes ;
+- utilisable sans javascript ;
+- adapté à différents supports grâce aux media queries.
+
+D'après les tests d'accessibilités de Firefox, il y a cependant quelques problèmes de contraste dans les sections avec un fond rouge.
+
