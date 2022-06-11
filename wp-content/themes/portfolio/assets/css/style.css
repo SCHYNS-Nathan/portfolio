@@ -296,12 +296,14 @@ p, .presentation__skip, .project__link, .projects__link {
     padding: 20px 120px;
     cursor: pointer;
 }
-.screen-reader-response p {
-    margin-bottom: 20px;
-    color: #CF2E46;
-    text-align: center;
+.screen-reader-response {
+    display: none;
+}
+.wpcf7-not-valid-tip {
+    line-height: 1.5;
 }
 .wpcf7-response-output {
+    font-family: MerriweatherBlack, serif;
     margin-top: 20px;
     color: #CF2E46;
     text-align: center;
