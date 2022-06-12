@@ -78,6 +78,7 @@ Les résultats sont plutôt bons dans l'ensemble mais la version mobile à quelq
 Au niveau de l'accessibilité, le site est :
 
 - entièrement navigable au clavier ;
+- sectionné via les aria-level et aria-labeledby ;
 - adapté aux différents daltonismes ;
 - utilisable sans javascript ;
 - adapté à différents supports grâce aux media queries.
